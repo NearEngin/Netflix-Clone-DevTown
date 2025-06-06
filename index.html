@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Netflix Clone PRO</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+     
+    <header class="navbar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo" />
+        <button class="signin-btn">Sign In</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Movie Rows -->
+    <main>
+        <section class="movie-row">
+            <h2>Popular on Netflix</h2>
+            <div class="row-container">
+                <button class="scroll-btn left" data-target="#popular-movies">&#10094;</button>
+                <div class="row-posters" id="popular-movies"></div>
+                <button class="scroll-btn right" data-target="#popular-movies">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="movie-row">
+            <h2>Top Rated</h2>
+            <div class="row-container">
+                <button class="scroll-btn left" data-target="#top-rated-movies">&#10094;</button>
+                <div class="row-posters" id="top-rated-movies"></div>
+                <button class="scroll-btn right" data-target="#top-rated-movies">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="movie-row">
+            <h2>Upcoming Movies</h2>
+            <div class="row-container">
+                <button class="scroll-btn left" data-target="#upcoming-movies">&#10094;</button>
+                <div class="row-posters" id="upcoming-movies"></div>
+                <button class="scroll-btn right" data-target="#upcoming-movies">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="movie-row">
+            <h2>Trending Now</h2>
+            <div class="row-container">
+                <button class="scroll-btn left" data-target="#trending-movies">&#10094;</button>
+                <div class="row-posters" id="trending-movies"></div>
+                <button class="scroll-btn right" data-target="#trending-movies">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

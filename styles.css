@@ -1,0 +1,163 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #111;
+    padding-bottom: 50px;
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.logo {
+    width: 100px;
+}
+
+.signin-btn {
+    background-color: #e50914;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/48f2a74b-bacd-4c12-88b8-8829511229a1/fb32b2c5-112d-4dc3-9dc3-8e3c409e022f/IN-en-20230529-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #e50914;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Movie Rows */
+.movie-row {
+    padding: 100px 20px 20px;
+}
+
+.movie-row h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Row container with arrows */
+.row-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.row-posters {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+.row-posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row-poster {
+    width: 200px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 300ms;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+}
+
+.row-poster:hover {
+    transform: scale(1.08);
+}
+
+/* Arrows */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.scroll-btn.left {
+    left: 10px;
+}
+
+.scroll-btn.right {
+    right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .row-poster {
+        width: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1rem;
+    }
+}
