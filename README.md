@@ -8,6 +8,7 @@
   <h1>Netflix Clone</h1>
 
   <p>A simple Netflix-like front-end web app built with HTML, CSS, and JavaScript, using The Movie Database (TMDB) API to fetch real movie data.</p>
+  <a href="https://nearengin.github.io/Netflix-Clone-DevTown/">Click here to Preview.</a>
 
   <h2>Features</h2>
   <ul>
